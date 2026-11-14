@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metal Rage Reborn</title>
+<meta name="description" content="A personal game development project around Metal Rage Online.">
+<style>
+:root {
+  --bg: #f6f6f4; --fg: #1d1f21; --muted: #5b6066; --card: #ffffff; --line: #dcdcd8; --accent: #b4441c;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #15171a; --fg: #e6e6e3; --muted: #a0a5ab; --card: #1e2124; --line: #33373c; --accent: #f08a5d; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "Noto Sans TC", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: .01em; }
+h2 { font-size: 1.2rem; margin: 36px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+p, li { margin: 0 0 10px; }
+.lede { color: var(--muted); margin-bottom: 24px; }
+a { color: var(--accent); }
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 8px; padding: 0; list-style: none; }
+.links a { display: inline-block; padding: 8px 14px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); text-decoration: none; font-weight: 600; }
+.updates { list-style: none; padding: 0; }
+.updates time { font-variant-numeric: tabular-nums; color: var(--muted); margin-right: 8px; }
+footer { color: var(--muted); font-size: .92rem; margin-top: 48px; padding-top: 12px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+<h1>Metal Rage Reborn</h1>
+<p class="lede">A personal game development project around <strong>Metal Rage Online</strong>.</p>
+
+<ul class="links">
+  <li><a href="https://ko-fi.com/lucasu">Support on Ko-fi</a></li>
+  <li><a href="#notes">Protocol notes</a></li>
+</ul>
+
+<h2>About</h2>
+<p>Metal Rage Online is a mech third-person shooter whose official service ended in 2011. This project studies how the game client works and documents it, so the knowledge is not lost. It is non-commercial.</p>
+
+<h2 id="notes">Notes</h2>
+<p>How the game client talks to a server, grouped by topic. Start with <a href="how-to-read.html">How to read these notes</a>.</p>
+<ul>
+  <li><a href="battles-multiplayer.html">Battles &amp; multiplayer</a>: battle start and in-battle packets.</li>
+</ul>
+
+<h2>Updates</h2>
+<ul class="updates">
+  <li><time datetime="2026-11-14">2026-11-14</time>Notes: Battles &amp; multiplayer (battle start, in-battle packets).</li>
+</ul>
+
+<h2>Thanks</h2>
+<ul>
+  <li><a href="https://github.com/shanzenos/MRO-Server">Shanzenos</a>: the original open-source Metal Rage Online server emulator this project grew from, plus the English translation and Linux support</li>
+  <li><a href="https://github.com/moonlight776">Moon</a>: protocol research and verification</li>
+</ul>
+
+<h2>Support the project</h2>
+<p>If you're able to and enjoy the project, a donation helps keep it going: <a href="https://ko-fi.com/lucasu">ko-fi.com/lucasu</a></p>
+
+<h2 lang="zh-Hant">中文</h2>
+<div lang="zh-Hant">
+<p>以《鐵影特攻 Online》（Metal Rage Online）為主題的個人遊戲開發專案：研究遊戲客戶端的運作方式，並整理成文件。原廠服務已在 2011 年停運。</p>
+<p>致謝：<a href="https://github.com/shanzenos/MRO-Server">Shanzenos</a>（本專案起源的開源 Metal Rage Online 伺服器模擬器，以及英文翻譯與 Linux 支援）、<a href="https://github.com/moonlight776">Moon</a>（協定研究與驗證）。</p>
+<p>非商業專案。</p>
+</div>
+
+<footer>
+<p>A fan project, not affiliated with or endorsed by the original developer or publishers of Metal Rage Online. The game and its content belong to their respective owners.</p>
+<p>Last updated 2026-11-14.</p>
+</footer>
+</main>
+</body>
+</html>
